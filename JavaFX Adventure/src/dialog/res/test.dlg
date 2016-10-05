@@ -1,0 +1,10 @@
+"Welcome to Marlo's Wares! How might I be of service?" MetBefore=0 -> @A MetBefore=1
+"Welcome back, friend." 50% -> @A
+"Welcome back!" @A
+	"Show me your wares." -> trade
+	"Tell me about yourself."
+		"I come from Arandor to the south. The green hills and valleys are far more beautiful than endless sand dunes." PlayerGoldAcquired>30 -> @A
+		"There's little to tell. I traveled here from the southern lands." -> @A
+	"Farewell."
+		"Until next time, traveler."
+			"[Leave]"
